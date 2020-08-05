@@ -1,6 +1,6 @@
 {
   "name": "discord-rp-cli",
-  "version": "1.5.3",
+  "version": "1.5.4",
   "description": "An easy-to-use command-line-interface for custom Discord rich presence.",
   "main": "index.js",
   "dependencies": {
