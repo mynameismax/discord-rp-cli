@@ -1,0 +1,28 @@
+{
+  "name": "discord-rp",
+  "version": "1.0.0",
+  "description": "An easy-to-use command-line-interface for custom Discord rich presence.",
+  "main": "index.js",
+  "dependencies": {
+    "clear": "^0.1.0",
+    "colors": "^1.4.0",
+    "delay": "^4.4.0",
+    "discord-rich-presence": "0.0.8",
+    "inquirer": "^7.3.3",
+    "ora": "^4.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mjshein/discord-rp.git"
+  },
+  "author": "MrTime#6969",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mjshein/discord-rp/issues"
+  },
+  "homepage": "https://github.com/mjshein/discord-rp#readme"
+}
