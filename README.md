@@ -9,8 +9,8 @@ Run `dscrp` in the command line, and follow the instructions.
 Fill in the following information:
 
 	What would you like the state to be?
-	  State:		# Enter what you want the state to be
-	  Details:		# Enter what you want the details to be
+	  State:	# Enter what you want the state to be
+	  Details:	# Enter what you want the details to be
 	  Client_ID:	# Enter your Client ID (see below for more info)
 	  Image_Key:	# The asset key of the image you want to use (see below for more info)
 # getting a client id
