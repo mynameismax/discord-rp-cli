@@ -14,12 +14,14 @@ Fill in the following information:
 	  Client_ID:	# Enter your Client ID (see below for more info)
 	  Image_Key:	# The asset key of the image you want to use (see below for more info)
 # getting a client id
-1: Go to [https://discord.com/developers/applications](https://discord.com/developers/applications)
-2: Click on `New Application` (in the top right corner)
-3: Enter the name of the application (anything you'd like, though, this **will** show up on the rich presence)
-4: Copy the client ID shown on the application's page
+
+ 1. Go to [https://discord.com/developers/applications](https://discord.com/developers/applications)
+2. Click on `New Application` (in the top right corner) 
+3. Enter the name of the application (anything you'd like, though, this **will** show up on the rich presence) 
+4. Copy the client ID shown on the application's page
+
 # uploading an image to use
-1: Go to your application's page
-2: On the sidebar, press on `Rich Presence`, then `Art Assets`
-3: Here, you can upload an image (512x512 minimum) and choose a name for it
-4: Now you can use that image's name when starting the rich presence
+1. Go to your application's page
+2. On the sidebar, press on `Rich Presence`, then `Art Assets`
+3. Here, you can upload an image (512x512 minimum) and choose a name for it
+4. Now you can use that image's name when starting the rich presence
