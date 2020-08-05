@@ -1,5 +1,5 @@
 {
-  "name": "discord-rp",
+  "name": "discord-rp-cli",
   "version": "1.0.0",
   "description": "An easy-to-use command-line-interface for custom Discord rich presence.",
   "main": "index.js",
@@ -18,6 +18,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mjshein/discord-rp.git"
+  },
+  "bin": {
+    "dscrp": "./src/index.js"
   },
   "author": "MrTime#6969",
   "license": "MIT",

@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const fs = require('fs');
 const ora = require('ora');
 const clear = require('clear');
@@ -16,8 +18,8 @@ inquirer
         'Start Rich Presence', 'Update RP Details',
       ],
     },
-  ]).then((answers) => {
-    switch (answers.Choice) {
+  ]).then((ans) => {
+    switch (ans.Choice) {
       case 'Update RP Details':
         newPresence();
         break;
@@ -63,8 +65,23 @@ function newPresence() {
       name: 'Image_Key',
       type: 'input',
     },
-  ]).then((answers) => {
-    fs.writeFileSync(`${homedir}/.easy-rpc-config.json`, JSON.stringify({ state: answers.State.trim(), details: answers.Details.trim(), clientID: answers.Client_ID.trim(), imageKey: answers.Image_Key.trim() }));
+  ]).then((ans) => {
+    let cID = ans.Client_ID;
+    let imgKey = ans.Image_Key;
+    let theState = ans.State;
+    let theDetails = ans.Details;
+    if (!ans.Client_ID) {
+      cID = '740399215066218557';
+      imgKey = 'invalid';
+    }
+    if (isNaN(ans.Client_ID.trim())) {
+      cID = '740399215066218557';
+      imgKey = 'invalid';
+    }
+    if (!ans.State) theState = 'No state provided.';
+    if (!ans.Details) theDetails = 'No details provided.';
+
+    fs.writeFileSync(`${homedir}/.easy-rpc-config.json`, JSON.stringify({ state: theState.trim(), details: theDetails.trim(), clientID: cID.trim(), imageKey: imgKey.trim() }));
     oldPresence();
   });
 }
